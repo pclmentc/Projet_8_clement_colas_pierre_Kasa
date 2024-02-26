@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0; 
+    background: #FFF;   
+}
+
+@media (min-width: 1440px) {
+    body {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}

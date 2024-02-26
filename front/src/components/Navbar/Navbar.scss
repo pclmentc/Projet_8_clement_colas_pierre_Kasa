@@ -1,0 +1,27 @@
+.lmj-logo {
+    width: 210px;
+    height: 68px;
+    flex-shrink: 0;
+}
+.categorie{
+    display: flex;
+    gap: 57px;
+}
+.lmj-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    
+}
+.categorie p{
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 34.224px */
+}
+.accueilButton{
+    text-decoration: underline;
+}
