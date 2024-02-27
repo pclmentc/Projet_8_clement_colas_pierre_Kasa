@@ -4,9 +4,9 @@ function Banner() {
     
     return (
         <div className='backImg'>
-            <div className='textImg'>
+            <h1 className='textImg'>
             Chez vous, partout et ailleurs
-            </div>
+            </h1>
         </div>
     )
 }

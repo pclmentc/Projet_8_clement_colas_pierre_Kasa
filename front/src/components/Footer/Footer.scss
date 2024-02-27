@@ -1,0 +1,27 @@
+.footer {
+    &-kasa{
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+    }
+	&-wrapper {
+		height: 12.5rem;
+		margin-top: auto;
+		background-color: #000000;
+		color: #ffffff;
+		text-align: center;
+        
+	}
+	&-logo {
+		height: 2.25rem;
+		margin-top: 3.75rem;
+		
+	}
+	&-credit {
+		margin-top: 2.5rem;
+		font-size: 24px;
+		font-weight: 500;
+		
+	}
+}
