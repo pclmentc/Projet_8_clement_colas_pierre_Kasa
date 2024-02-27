@@ -7,10 +7,10 @@ function Accueil() {
     document.title = 'Accueil - Kasa'
     
     return (
-    <>    
-    <Navbar />
+    <>  
+    
     <Banner/>
-    <Footer/>
+    
     </>
     )
 }
