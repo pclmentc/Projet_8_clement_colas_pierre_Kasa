@@ -1,0 +1,47 @@
+
+
+/* ---------------------------------------- */
+/* ==                THUMB                 */
+/*---------------------------------------- */
+.thumb {
+	width: calc(33.3333% - 50px);
+	max-width: 340px;		
+	position: relative;	
+	box-sizing: border-box;	
+	transform: scale(1);
+	transition-duration: 0.5s;	
+	
+	&:hover {
+		transform: scale(1.05);
+		transition-duration: 0.5s;
+	}
+	&-cover-wrapper img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 0.625rem;
+		filter: brightness(70%);
+	}
+	&-title {
+		z-index: 1;
+		position: absolute;
+		bottom: 1rem;
+		padding-right: 1.25rem;
+		padding-left: 1.25rem;
+		color: #ffffff;
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 142.6%;
+		
+	}
+}
+
+.thumb,
+.thumb-cover-wrapper img {
+	height: 340px;
+	
+}
+.filler {
+	width: calc(33.3333% - 10px);
+	max-width: 340px;
+	visibility: hidden;
+  }

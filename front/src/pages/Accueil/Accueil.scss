@@ -14,3 +14,29 @@ body{
     background-image:url('../src/assets/IMG.png');
 }
 
+.home {	
+		padding-bottom: 2.6875rem;
+	
+}
+
+.thumb-wrapper {	
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		max-width: 1240px;
+		width: 100%;
+		margin: 46px auto 0;		
+		padding-block: 56px;
+		padding-inline: 50px;		
+		row-gap: 50px;				
+		border-radius: 1.5625rem;
+		background: #f7f7f7;
+	
+}
+
+.filling-empty-space-child {
+    	
+		width: 21.25rem;
+		height: 0;
+	
+}
