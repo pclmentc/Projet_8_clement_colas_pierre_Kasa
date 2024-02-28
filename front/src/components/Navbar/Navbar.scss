@@ -1,3 +1,4 @@
+@import '../../style.scss';
 .lmj-logo {
     width: 210px;
     height: 68px;
@@ -25,7 +26,9 @@
     padding-top: 45px;        
     
 }
-.categorie p{
+.categorie {
+    font-family: Montserrat;
+    p{
     color: #000;
     text-align: right;
     font-family: Montserrat;
@@ -33,4 +36,5 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 34.224px */
+}
 }
