@@ -5,19 +5,24 @@
 }
 .categorie{
     display: flex;
-    gap: 57px;
+    gap: 57px;   
+     
 }
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px; 
+    
+    &.active {
+        text-decoration: underline;             
+      }  
+} 
+
 .lmj-navbar{
     display: flex;
     justify-content: space-between;
-    padding-top: 45px;
-
-    a{
-        text-decoration: none;
-        color: #000;
-        font-size: 24px;
-    }
-    
+    padding-top: 45px;        
     
 }
 .categorie p{
