@@ -10,11 +10,15 @@ function Navbar() {
             <img src={logo} alt='Kasa' className='lmj-logo' />
             <div className='categorie'>
 
-            <NavLink exact to='/' activeClassName='active-link' > 
+            <NavLink
+             to="/" end 
+             className="nav-link"> 
                Accueil
             </NavLink>
             
-            <NavLink to='/a-propos' activeClassName='active-link' >
+            <NavLink
+             to="/a-propos" 
+             className="nav-link">
                À propos
             </NavLink>
             
