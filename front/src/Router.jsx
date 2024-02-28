@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Accueil from './pages/Accueil/Accueil'
+import Apropos from './pages/A-propos/Apropos'
 
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
@@ -19,6 +20,7 @@ function Router() {
 					
 					<Route exact path="/" element={<Accueil />} />
 					<Route path="*" element={<Error404 />} />
+					<Route path="/a-propos" element={<Apropos />} />
           
 				</Routes>
 				<Footer />

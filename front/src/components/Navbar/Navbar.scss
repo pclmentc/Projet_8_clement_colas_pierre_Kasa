@@ -11,6 +11,13 @@
     display: flex;
     justify-content: space-between;
     padding-top: 45px;
+
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+    }
+    
     
 }
 .categorie p{
@@ -21,7 +28,4 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 34.224px */
-}
-.accueilButton{
-    text-decoration: underline;
 }

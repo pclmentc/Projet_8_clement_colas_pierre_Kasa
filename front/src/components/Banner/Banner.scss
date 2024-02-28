@@ -1,35 +1,7 @@
-.backImg{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;            
-    background-image: url('../../assets/IMG.png');    
-    background-size: cover;
-    background-position: center;
-    overflow: hidden; 
-    position: relative;    
-    height: 223px; 
-    border: 1px solid black;
-    border-radius: 25px;
-    box-shadow: 0 6px #f6f6f6;
-    
-        
-    
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: black;
-        opacity: 0.6;
-        border-radius: 25px;
-        mix-blend-mode: darken; 
-        pointer-events: none; // Ignorer les interactions avec le pseudo-élément
-      }
-    
-}
+@import '../../style.scss';
+
+@include banner;   
+
 
 .textImg{
     display: flex;
