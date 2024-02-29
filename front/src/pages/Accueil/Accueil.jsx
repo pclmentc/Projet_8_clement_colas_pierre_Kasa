@@ -10,7 +10,7 @@ function Accueil() {
     try {
         
         if (annonces.fetchedData) {
-            
+            console.log('Données récupérées avec succès:', annonces.fetchedData);
         }
     } catch (error) {
         console.error('Erreur de parsing JSON :', error);        
