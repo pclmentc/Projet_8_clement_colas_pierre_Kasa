@@ -23,7 +23,10 @@
 .lmj-navbar{
     display: flex;
     justify-content: space-between;
-    padding-top: 45px;        
+    align-items: center;
+    padding-top: 45px;  
+    margin: 0 auto;      
+    width: 1240px;
     
 }
 .categorie {
