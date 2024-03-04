@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner';
 import "./Accueil.scss";
-import { useFetch } from '../../utils/useFetch';
+import { useFetch } from '../../services/useFetch';
 import Thumb from '../../components/Thumb/Thumb';
 
 function Accueil() {
@@ -22,7 +22,7 @@ function Accueil() {
         <section className='home'>  
             <Banner/>
             {annonces.isLoading && <p>Loading...</p>}
-            {annonces.error && <p>Une erreur s'est produite lors du chargement des données.</p>}
+            {annonces.error && <p>Une erreur est survenue lors du chargement des données.</p>}
             {annonces.fetchedData && (
                 <div className="thumb-wrapper">
                     {annonces.fetchedData.map((annonce) => (

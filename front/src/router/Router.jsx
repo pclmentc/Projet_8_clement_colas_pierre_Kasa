@@ -1,16 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Accueil from './pages/Accueil/Accueil'
-import Apropos from './pages/A-propos/Apropos'
+import Accueil from '../pages/Accueil/Accueil'
+import Apropos from '../pages/A-propos/Apropos'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+import Error404 from '../pages/404/index'
+import Annonce from '../pages/Annonces/Annonces'
 
-import Navbar from './components/Navbar/Navbar'
-import Footer from './components/Footer/Footer'
-import Error404 from './pages/404/index'
-import Annonce from './pages/Annonces/Annonces'
-
-function Router() {
-  
+function Router() {  
 
   return (
     <React.StrictMode>
