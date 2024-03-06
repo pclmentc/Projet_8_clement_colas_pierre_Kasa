@@ -1,0 +1,62 @@
+@import '../../style.scss';
+
+.annonce {
+	&-title {
+		margin-top: 0.9375rem;
+		margin-bottom: 0;
+		color: $primary-color;
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 142.6%;
+		
+	}
+	&-location {
+		margin-top: 0.3125rem;
+		margin-bottom: 0;
+		color: $primary-color;
+		font-size: 0.875rem;
+		font-weight: 500;
+		line-height: 142.6%;
+		
+	}
+	
+}
+
+.tag-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rating {
+	
+	&-host-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		
+	}
+}
+.host {
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		
+	}
+	&-name {
+		margin-right: 0.75rem;
+		color: $primary-color;
+		font-size: 0.75rem;
+		font-weight: 500;
+		text-align: end;
+		
+	}
+	&-picture {
+		width: 2rem;
+		height: 2rem;
+		border-radius: 100%;
+		
+	}
+}
+
