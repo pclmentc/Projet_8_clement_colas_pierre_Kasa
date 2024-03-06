@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import PropTypes from 'prop-types';
 import './style.scss'
 
 function Error({
@@ -17,10 +17,16 @@ function Error({
 				{subtitle2 && subtitle2}
 			</h2>
 			<Link className="error-link" to="/">
-				Retourner sur la page d'accueil
+			Retourner sur la page d&apos;accueil
 			</Link>
 		</section>
 	)
 }
 
+Error.propTypes = {
+	title: PropTypes.string.isRequired,
+	subtitle: PropTypes.string.isRequired,
+	subtitle2: PropTypes.string,
+  };
+  
 export default Error

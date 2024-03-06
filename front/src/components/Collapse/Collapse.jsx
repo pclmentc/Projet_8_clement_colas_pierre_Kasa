@@ -1,16 +1,17 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import chevron from '../../assets/chevron.svg'
 import './Collapse.scss'
+import PropTypes from 'prop-types';
 
 function Collapse({ title, content }) {
     // État pour gérer la classe 'active'
     const [setActive, setActiveState] = useState('')
-    
+
     // État pour gérer la hauteur du contenu
-    const [setHeight, setHeightState] = useState('0px')
-    
+    const [setHeight, setHeightState] = useState(() => '0px');
+
     // État pour gérer la rotation de l'icône chevron
-    const [setRotate, setRotateState] = useState('collapse-icon')
+    const [setRotate, setRotateState] = useState(() => 'collapse-icon');
 
     // Référence pour obtenir la hauteur du contenu
     const contentCollapse = useRef(null)
@@ -65,5 +66,13 @@ function Collapse({ title, content }) {
         </div>
     )
 }
+
+Collapse.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.string),
+    ]).isRequired,
+};
 
 export default Collapse

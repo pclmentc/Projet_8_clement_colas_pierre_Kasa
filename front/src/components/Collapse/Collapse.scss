@@ -1,7 +1,7 @@
 @import '../../style.scss';
 
 .collapse {
-	display: flex;    
+	display: flex;
 	align-items: center;
 	height: 1.875rem;
 	padding-left: 0.75rem;
@@ -10,22 +10,24 @@
 	background-color: $primary-color;
 	cursor: pointer;
 	transition: background-color 0.6s ease;
-	
+
 	&-section {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 1.25rem;
-		
+
 	}
+
 	&-title {
-        @include main-typography;
-		color: #FFF;        
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 142.6%;
-		
+		@include main-typography;
+		color: #FFF;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 142.6%;
+
 	}
+
 	&-icon {
 		width: 1.125rem;
 		height: 1.125rem;
@@ -33,30 +35,33 @@
 		margin-left: auto;
 		transition: -webkit-transform 0.6s ease;
 		transition: transform 0.6s ease;
-		
+
 	}
+
 	&-content {
 		overflow: hidden;
 		transition: max-height 0.6s ease;
 	}
+
 	&-text {
-        @include main-typography;
+		@include main-typography;
 		padding-top: 1.125rem;
 		padding-right: 0.375rem;
 		padding-bottom: 1.125rem;
 		padding-left: 0.75rem;
 		background: #f7f7f7;
 		color: black;
-		font-size: 18px;		
-		
+		font-size: 18px;
+
 	}
 }
 
 .rotate {
 	transform: rotate(180deg);
 }
-.collapseSection{
-  width: 1023px;
-  margin: 0 auto;
-  padding-block: 38px;
+
+.collapseSection {
+	width: 1023px;
+	margin: 0 auto;
+	padding-block: 38px;
 }
