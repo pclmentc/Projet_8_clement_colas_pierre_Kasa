@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import PropTypes from 'prop-types';
 import './Thumb.scss'
 
 function Thumb({ link, cover, title }) {
@@ -14,5 +14,9 @@ function Thumb({ link, cover, title }) {
 		</div>
 	)
 }
-
+Thumb.propTypes = {
+    link: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+};
 export default Thumb

@@ -18,7 +18,7 @@ function Accueil() {
         console.error('Texte de la réponse :', annonces.responseText);
     }
     
-    return (
+    return (        
         <section className='home'>  
             <Banner/>
             {annonces.isLoading && <p>Loading...</p>}

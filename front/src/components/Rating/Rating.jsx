@@ -32,6 +32,6 @@ function Rating({ rating }) {
    );
 }
 Rating.propTypes = {
-    rating: PropTypes.array.isRequired,
+    rating: PropTypes.string.isRequired,
 };
 export default Rating;

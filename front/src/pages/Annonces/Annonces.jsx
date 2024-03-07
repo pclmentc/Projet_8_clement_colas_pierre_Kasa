@@ -12,7 +12,7 @@ import Collapse from '../../components/Collapse/Collapse'
 import './Annonces.scss'
 
 function Annonce() {
-	
+
 	const annonces = useFetch(window.location.origin + '/annonces.json')
 	console.log(annonces);
 	const { annonceId } = useParams()
@@ -24,20 +24,20 @@ function Annonce() {
 		)
 	}
 	console.log(thisAnnonce);
-	
+
 	if (annonces.error) {
 		return <Error />
 	}
-	
+
 	if (!thisAnnonce) {
 		return <Error404 />
 	} else {
-		
+
 		const [firstName, lastName] = thisAnnonce.host.name.split(' ')
-		
+
 		document.title = thisAnnonce.title + ' - Kasa'
 		return (
-			<section>
+			<section className='sectionAnnonce'>
 				<Gallery images={thisAnnonce.pictures} />
 				<div className="annonce-info-rating-host-wrapper">
 					<div className="annonce-info-wrapper">
@@ -68,14 +68,16 @@ function Annonce() {
 					</div>
 				</div>
 				<div className="description-equipments-wrapper">
-					<Collapse
-						title="Description"
-						content={thisAnnonce.description}
-					/>
-					<Collapse
-						title="Équipements"
-						content={thisAnnonce.equipments}
-					/>
+
+					<Collapse title="Description" content={thisAnnonce.description} />					
+
+					<Collapse title="Équipements" content={
+					<ul>
+                {thisAnnonce.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              		</ul>} />						
+					
 				</div>
 			</section>
 		)
