@@ -42,17 +42,6 @@ function Annonce() {
 				<div className="annonce-info-rating-host-wrapper">
 					<div className="annonce-info-wrapper">
 						<h1 className="annonce-title">{thisAnnonce.title}</h1>
-						<p className="annonce-location">
-							{thisAnnonce.location}
-						</p>
-						<div className="tag-wrapper">
-							{thisAnnonce.tags.map((tag, index) => (
-								<Tag tagName={tag} key={`${tag}-${index}`} />
-							))}
-						</div>
-					</div>
-					<div className="rating-host-wrapper">
-						<Rating rating={thisAnnonce.rating} />
 						<div className="host-wrapper">
 							<div className="host-name">
 								{firstName}
@@ -66,18 +55,34 @@ function Annonce() {
 							/>
 						</div>
 					</div>
+					<p className="annonce-location">
+						{thisAnnonce.location}
+					</p>
+					<div className="tagTag">
+					<div className="tag-wrapper">
+						{thisAnnonce.tags.map((tag, index) => (
+							<Tag tagName={tag} key={`${tag}-${index}`} />
+						))}
+					</div>
+
+					<div className="rating-host-wrapper">
+						<Rating rating={thisAnnonce.rating} />
+
+					</div>
+					</div>
+
 				</div>
 				<div className="description-equipments-wrapper">
 
-					<Collapse title="Description" content={thisAnnonce.description} />					
+					<Collapse title="Description" content={thisAnnonce.description} />
 
 					<Collapse title="Équipements" content={
-					<ul>
-                {thisAnnonce.equipments.map((equipment, index) => (
-                  <li key={index}>{equipment}</li>
-                ))}
-              		</ul>} />						
-					
+						<ul>
+							{thisAnnonce.equipments.map((equipment, index) => (
+								<li key={index}>{equipment}</li>
+							))}
+						</ul>} />
+
 				</div>
 			</section>
 		)

@@ -7,16 +7,13 @@ function Gallery({ images }) {
 
     // Index de l'image actuelle
     const [current, setCurrent] = useState(0);
-
-    // Calcul de la longueur du tableau d'images
     const length = images.length;
 
-    // Fonction pour passer à la diapositive suivante
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
     };
 
-    // Fonction pour passer à la diapositive précédente
+
     const previousSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     };
@@ -54,17 +51,24 @@ function Gallery({ images }) {
                 return (
                     <div
                         className={index === current ? 'slide active' : 'slide'}
-                        key={`slider-${index}`}
-                    >
-                        {/* Afficher l'image uniquement si elle est active */}
+                        key={`slider-${index}`}                    >
+
                         {index === current && (
-                            <img
-                                src={slider}
-                                alt={`diapo ${index + 1}`}
-                                className="image"
-                            />
+                            <>
+                                <img
+                                    src={slider}
+                                    alt={`diapo ${index + 1}`}
+                                    className="image"
+                                />
+                                <div className="slide-counter-container">
+                                    <div className="slide-counter">
+                                        {current + 1}/{length}
+                                    </div>
+                                </div>
+                            </>
                         )}
                     </div>
+
                 );
             })}
         </div>

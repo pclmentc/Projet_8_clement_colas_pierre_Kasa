@@ -1,20 +1,23 @@
 @import '../../style.scss';
 
 .annonce {
+	
 	&-title {
+		@include main-typography;
 		margin-top: 30px;
 		margin-bottom: 0;
 		color: $primary-color;
-		font-size: 1.125rem;
+		font-size: 36px;
 		font-weight: 500;
 		line-height: 142.6%;
 		
 	}
 	&-location {
+		@include main-typography;
 		margin-top: 0.3125rem;
 		margin-bottom: 0;
-		color: $primary-color;
-		font-size: 0.875rem;
+		color: black;
+		font-size: 18px;
 		font-weight: 500;
 		line-height: 142.6%;
 		
@@ -45,16 +48,17 @@
 		
 	}
 	&-name {
+		@include main-typography;
 		margin-right: 0.75rem;
 		color: $primary-color;
-		font-size: 0.75rem;
+		font-size: 18px;
 		font-weight: 500;
 		text-align: end;
 		
 	}
 	&-picture {
-		width: 2rem;
-		height: 2rem;
+		width: 64px;
+		height: 64px;
 		border-radius: 100%;
 		
 	}
@@ -62,4 +66,19 @@
 .sectionAnnonce{
 	max-width: 1240px;
 	margin: 0 auto;
+}
+
+.annonce-info-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.tagTag{
+	display: flex;
+	justify-content: space-between;
+}
+.description-equipments-wrapper{
+	display: flex;
+	justify-content: space-between;
+  margin-top: 76px;
 }

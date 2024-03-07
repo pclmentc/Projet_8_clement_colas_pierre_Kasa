@@ -45,3 +45,17 @@
 		margin-inline: auto;
 	}
 }
+.slide-counter-container {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .slide-counter {	
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+  }

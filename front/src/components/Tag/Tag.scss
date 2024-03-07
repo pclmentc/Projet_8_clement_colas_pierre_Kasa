@@ -1,16 +1,16 @@
 @import '../../style.scss';
 
 .tag {
+	@include main-typography;
 	min-width: 4rem;
-	margin-top: 0.75rem;
+	margin-block: 0.75rem;
 	margin-right: 0.625rem;
 	padding: 0.125rem 0.625rem;
 	border-radius: 0.3125rem;
 	background: $primary-color;
-	color: #ffffff;
-	font-size: 0.625rem;
-	line-height: 142.6%;
+	color: #ffffff;	
+	line-height: 231.6%;
 	text-align: center;
-	vertical-align: middle;
+	
 	
 }
