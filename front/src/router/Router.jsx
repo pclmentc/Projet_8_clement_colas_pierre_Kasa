@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Accueil from '../pages/Accueil/Accueil'
@@ -11,7 +11,7 @@ import Annonce from '../pages/Annonces/Annonces'
 function Router() {  
 
   return (
-    <React.StrictMode>
+    
 			<BrowserRouter basename="/">
 				<Navbar />
 				<Routes>
@@ -24,7 +24,7 @@ function Router() {
 				</Routes>
 				<Footer />
 			</BrowserRouter>
-		</React.StrictMode>
+		
   )
 }
 

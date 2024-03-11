@@ -33,6 +33,7 @@ function Annonce() {
 		const [firstName, lastName] = thisAnnonce.host.name.split(' ')
 
 		document.title = thisAnnonce.title + ' - Kasa'
+
 		return (
 			<section className='sectionAnnonce'>
 				<Gallery images={thisAnnonce.pictures} />
@@ -71,14 +72,14 @@ function Annonce() {
 				</div>
 				<div className="description-equipments-wrapper">
 
-					<Collapse title="Description" content={thisAnnonce.description } />
+					<Collapse title="Description" content={thisAnnonce.description }customStyle="custom-collapse" />
 
 					<Collapse title="Équipements" content={
 						<ul>
 							{thisAnnonce.equipments.map((equipment, index) => (
 								<li key={index}>{equipment}</li>
 							))}
-						</ul>} />
+						</ul>}customStyle="custom-collapse" />
 					
 
 				</div>
