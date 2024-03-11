@@ -76,9 +76,11 @@
 .tagTag{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .description-equipments-wrapper{
 	display: flex;
 	justify-content: space-between;
-  margin-top: 76px;
+    margin-top: 24px;
+	gap: 45px;
 }
