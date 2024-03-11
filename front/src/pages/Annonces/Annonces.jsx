@@ -71,12 +71,17 @@ function Annonce() {
 				</div>
 				<div className="description-equipments-wrapper">
 
-					<Collapse title="Description" content={thisAnnonce.description || ''} />
+					<Collapse title="Description" content={thisAnnonce.description } />
 
-					<Collapse title="Équipements" content={thisAnnonce.equipments.map((equipment) => equipment || '')} />
+					<Collapse title="Équipements" content={
+						<ul>
+							{thisAnnonce.equipments.map((equipment, index) => (
+								<li key={index}>{equipment}</li>
+							))}
+						</ul>} />
 					
+
 				</div>
-				
 			</section>
 		)
 	}

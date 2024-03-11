@@ -33,7 +33,8 @@ function Collapse({ title, content }) {
     };
 
     // Modification de la structure du contenu pour prendre en charge des paires clé-valeur
-    const contentArray = Array.isArray(content) ? content : [{ key: '', value: content }];    
+    const contentArray = Array.isArray(content) ? content : [{ key: '', value: content }];
+    
 
     return (
         <div className="collapse-section">
@@ -54,7 +55,7 @@ function Collapse({ title, content }) {
                     {contentArray.map((item, index) => (
                         <div key={`${item.key}-${index}`} className="collapse-item">
                             <div className="collapse-key">{item.key}</div>
-                            <div className="collapse-value">{typeof item.value === 'object' ? item.value.text || '' : item.value}</div>
+                            <div className="collapse-value">{item.value}</div>
                         </div>
                     ))}
                 </div>
@@ -66,9 +67,9 @@ function Collapse({ title, content }) {
 Collapse.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.arrayOf(PropTypes.string),
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.string),
     ]).isRequired,
-  };
+};
 
 export default Collapse;
