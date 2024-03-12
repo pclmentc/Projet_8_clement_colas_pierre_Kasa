@@ -17,7 +17,11 @@ body{
 
 .home {	
 		padding-bottom: 2.6875rem;
-	
+		@media only screen and (max-width: 435px) {
+        
+        padding: 0;
+        
+		}
 }
 
 .thumb-wrapper {	
@@ -32,7 +36,14 @@ body{
 		row-gap: 50px;				
 		border-radius: 1.5625rem;
 		background: #f7f7f7;
-	
+		@media only screen and (max-width: 435px) {
+
+        flex-direction: column;
+        margin: 0 auto;
+        background: none;
+		row-gap: 22px;
+		padding: 0;
+		}
 }
 
 .filling-empty-space-child {

@@ -7,7 +7,13 @@
 	position: relative;	
 	box-sizing: border-box;	
 	transform: scale(1);
-	transition-duration: 0.5s;	
+	transition-duration: 0.5s;
+	@media only screen and (max-width: 435px) {
+      width: auto;  
+	  margin: 0 auto;
+        
+        
+    }	
 	
 	&:hover {
 		transform: scale(1.05);
@@ -36,6 +42,13 @@
 .thumb,
 .thumb-cover-wrapper img {
 	height: 340px;
+	@media only screen and (max-width: 435px) {
+     
+	 height: 255px;   
+        
+        
+    }
+
 	
 }
 .filler {

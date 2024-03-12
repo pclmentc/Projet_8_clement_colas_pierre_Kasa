@@ -22,7 +22,13 @@ $primary-color: #ff6060;
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 0 6px #f6f6f6; 
-       
+    @media only screen and (max-width: 435px) {
+        
+      width: 335px;
+      height: 111px;
+      margin: 27px auto
+
+   } 
 
     &:before {
       content: "";

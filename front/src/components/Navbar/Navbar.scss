@@ -3,17 +3,34 @@
     width: 210px;
     height: 68px;
     flex-shrink: 0;
+    @media only screen and (max-width: 435px) {
+        
+       width: 145px; 
+       height: auto;
+
+    }
 }
 .categorie{
     display: flex;
-    gap: 57px;   
+    gap: 57px;
+    @media only screen and (max-width: 435px) {
+                 
+        gap: 26px;
+        
+    }   
      
 }
 
 .nav-link{
+    @include main-typography;
     text-decoration: none;
     color: #000;
     font-size: 24px; 
+    @media only screen and (max-width: 435px) {
+        
+        font-size: 12px;
+        font-weight: 500;
+    }
     
     &.active {
         text-decoration: underline;             
@@ -26,7 +43,13 @@
     align-items: center;
     padding-top: 45px;  
     margin: 0 auto;      
-    width: 1240px;
+    max-width: 1240px;
+    @media only screen and (max-width: 435px) {
+        
+        justify-content: center; 
+        gap: 26px;
+        
+    }
     
 }
 .categorie {
