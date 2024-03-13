@@ -1,4 +1,4 @@
-
+@import '../../style.scss';
 .backImg1 {
   margin: 50px auto 0;
   display: flex;
@@ -15,6 +15,7 @@
   border-radius: 25px;
   box-shadow: 0 6px #f6f6f6;
   background-image: url('../../assets/aPropos.png');
+  
   @media only screen and (max-width: 435px) {
 		width: 335px;
     height: 111px;
