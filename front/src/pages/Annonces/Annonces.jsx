@@ -1,14 +1,12 @@
+
 import { useFetch } from '../../services/useFetch'
 import { useParams } from 'react-router-dom'
-
 import Error from '../../components/Error'
 import Error404 from '../404/index'
-
 import Gallery from '../../components/Gallery/Gallery'
 import Tag from '../../components/Tag/Tag'
 import Rating from '../../components/Rating/Rating'
 import Collapse from '../../components/Collapse/Collapse'
-
 import './Annonces.scss'
 
 function Annonce() {
@@ -17,9 +15,7 @@ function Annonce() {
 	const { annonceId } = useParams()
 	let thisAnnonce
 	if (annonces.fetchedData) {
-		thisAnnonce = annonces.fetchedData.find(
-			(annonce) => annonce.id === annonceId
-		)
+		thisAnnonce = annonces.fetchedData.find((annonce) => annonce.id === annonceId)
 	}
 
 	if (annonces.error) {

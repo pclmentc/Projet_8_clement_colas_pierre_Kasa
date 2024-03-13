@@ -11,6 +11,16 @@
 	color: #ffffff;	
 	line-height: 231.6%;
 	text-align: center;
+
+	@media only screen and (max-width: 435px) {
+			
+		border-radius: 10px;		
+        width: 84px;
+        height: 18px;
+		line-height: normal;
+		padding: 0;
+		
+		}
 	
 	
 }

@@ -2,7 +2,14 @@
 
 .gallery,
 .image {
-	height: 415px;	
+	height: 415px;
+	@media only screen and (max-width: 435px) {
+			
+		height: 255px;
+			
+	
+	
+	}	
 }
 
 .gallery {
@@ -24,16 +31,35 @@
 	height: 79px;
 	flex-shrink: 0;
 	cursor: pointer;
-	user-select: none;	
+	user-select: none;
+	@media only screen and (max-width: 435px) {
+			
+		width: 24px;
+		height: 24px;	
+	
+	
+	}	
 }
 
 .right-arrow {
 	right: 50px;
-	transform: rotate(180deg);	
+	transform: rotate(180deg);
+	@media only screen and (max-width: 435px) {
+			
+		right: 8px;	
+	
+	
+	}	
 }
 
 .left-arrow {
-	left: 50px;	
+	left: 50px;
+	@media only screen and (max-width: 435px) {
+			
+		left: 8px;	
+	
+	
+	}	
 }
 
 .slide {
@@ -43,6 +69,12 @@
 	&.active {		
 		transition-duration: 0.2s;			
 		margin-inline: auto;
+	}
+	@media only screen and (max-width: 435px) {
+			
+		margin-top: 27px;	
+	
+	
 	}
 }
 .slide-counter-container {
@@ -58,4 +90,10 @@
 	color: white;
 	font-size: 18px;
 	font-weight: 500;
+	@media only screen and (max-width: 435px) {
+			
+		color: transparent;	
+	
+	
+	}
   }
