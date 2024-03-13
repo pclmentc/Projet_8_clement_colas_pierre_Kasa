@@ -14,11 +14,13 @@
 
 	@media only screen and (max-width: 435px) {
 			
-		border-radius: 10px;		
-        width: 84px;
+		border-radius: 10px;	        
         height: 18px;
-		line-height: normal;
-		padding: 0;
+		line-height: normal;		
+		font-size: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		
 		}
 	

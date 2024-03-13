@@ -64,6 +64,13 @@
 	&-wrapper {
 		display: flex;
 		align-items: center;
+		@media only screen and (max-width: 435px) {
+			
+			position: absolute;		
+			top: 516px;
+			right: 15px;
+			}
+		
 		
 	}
 	&-name {
@@ -73,12 +80,24 @@
 		font-size: 18px;
 		font-weight: 500;
 		text-align: end;
+		@media only screen and (max-width: 435px) {
+			
+			font-size: 12px;		
+			
+			
+			}
 		
 	}
 	&-picture {
 		width: 64px;
 		height: 64px;
 		border-radius: 100%;
+		@media only screen and (max-width: 435px) {
+			
+			width: 32px;
+			height: 32px;			
+			
+			}
 		
 	}
 }
@@ -91,6 +110,7 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
+  padding-top: 20px;
 }
 .tagTag{
 	display: flex;
@@ -108,9 +128,32 @@
 	justify-content: space-between;
     margin-top: 5px;
 	gap: 45px;
+	@media only screen and (max-width: 435px) {
+			
+		flex-direction: column;
+		margin: 0 auto;	
+		gap: 0;	
+        
+        
+		}
 }
 .custom-collapse {
 	width: 45%;
+
+	@media only screen and (max-width: 435px) {
+			
+		width: 100%;		
+        
+        
+		}
+  }
+  body{
+	@media only screen and (max-width: 435px) {
+			
+		padding-inline: 19px;		
+        
+        
+		}
   }
 
   
