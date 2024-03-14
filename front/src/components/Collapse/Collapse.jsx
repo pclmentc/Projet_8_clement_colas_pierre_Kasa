@@ -65,6 +65,7 @@ Collapse.propTypes = {
     content: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.arrayOf(PropTypes.string),
+        PropTypes.element
     ]).isRequired,
     customStyle: PropTypes.string,
 };
