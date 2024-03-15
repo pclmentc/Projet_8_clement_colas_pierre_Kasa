@@ -3,8 +3,8 @@ import chevron from '../../assets/chevron.svg';
 import './Collapse.scss';
 import PropTypes from 'prop-types';
 
-function Collapse({ title, content,customStyle }) {
-    
+function Collapse({ title, content, customStyle }) {
+
     // État pour gérer la classe 'active'
     const [setActive, setActiveState] = useState('');
     // État pour gérer la hauteur du contenu
@@ -15,7 +15,7 @@ function Collapse({ title, content,customStyle }) {
     const contentCollapse = useRef(null);
 
     // Fonction pour basculer l'état du collapse
-    const toggleCollapse = () => {        
+    const toggleCollapse = () => {
 
         setActiveState(setActive === '' ? 'active' : '');
         setHeightState(
@@ -26,15 +26,15 @@ function Collapse({ title, content,customStyle }) {
         setRotateState(
             setActive === 'active' ? 'collapse-icon' : 'collapse-icon rotate'
         );
-        
+
     };
 
     // Modification de la structure du contenu pour prendre en charge des paires clé-valeur
     const contentArray = Array.isArray(content) ? content : [{ key: '', value: content }];
-    
+
 
     return (
-        <div className={`collapse-section ${customStyle}`}>            
+        <div className={`collapse-section ${customStyle}`}>
             <button className={`collapse ${setActive}`} onClick={toggleCollapse}>
                 <span className="collapse-title">{title}</span>
                 <img src={chevron} className={`${setRotate}`} alt="" />
